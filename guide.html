@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru" class="guide-page-root">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Самый подробный гайд по чаю — Tutea</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="style.css?v=guide-brewing-6" />
+</head>
+<body>
+  <a class="skip-link" href="#guide-content">Перейти к содержанию гайда</a>
+
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="tu tea">
+        <img src="assets/tu-tea-logo.png" alt="tu tea" width="60" height="21" />
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <div class="nav-primary">
+          <a class="nav-home" href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="conditions.html">Условия</a>
+        </div>
+        <details class="more-menu has-current">
+          <summary aria-label="Открыть дополнительное меню">
+            <span class="menu-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="more-menu-panel">
+            <a href="guide.html" aria-current="page">Гайд</a>
+            <a href="materials.html">Материалы</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide-page">
+    <section class="guide-hero">
+      <div class="container">
+        <span class="section-label">База знаний</span>
+        <h1>Самый подробный гайд по чаю</h1>
+        <p>
+          Для всех, кто работает с&nbsp;чаем: как заваривать его разными способами, быстро тестировать новые позиции,
+          настраивать вкус, стабильно готовить и&nbsp;понятно встроить чай в&nbsp;меню.
+        </p>
+      </div>
+    </section>
+
+    <div class="container guide-mobile-toc">
+      <details open>
+        <summary><span>Содержание гайда</span><small>9 разделов</small></summary>
+        <nav aria-label="Содержание гайда" data-guide-nav>
+          <a href="#quick-start">Быстрый старт</a>
+          <a href="#temperatures">Параметры заваривания</a>
+          <a href="#calibration">Калибровка вкуса</a>
+          <a href="#testing">Как тестировать чай</a>
+          <a href="#classic-brewing">Классическое заваривание</a>
+          <a href="#batch">Батч и&nbsp;чай дня</a>
+          <a href="#tea-drinks">Напитки на&nbsp;основе чая</a>
+          <a href="#problems">Частые проблемы</a>
+          <a href="#checklist">Мини-чек-лист</a>
+        </nav>
+      </details>
+    </div>
+
+    <div class="container guide-layout">
+      <aside class="guide-toc" aria-label="Навигация по гайду">
+        <strong>В гайде</strong>
+        <nav data-guide-nav>
+          <a href="#quick-start">Быстрый старт</a>
+          <a href="#temperatures">Параметры заваривания</a>
+          <a href="#calibration">Калибровка вкуса</a>
+          <a href="#testing">Как тестировать чай</a>
+          <a href="#classic-brewing">Классическое заваривание</a>
+          <a href="#batch">Батч и&nbsp;чай дня</a>
+          <a href="#tea-drinks">Напитки на&nbsp;основе чая</a>
+          <a href="#problems">Частые проблемы</a>
+          <a href="#checklist">Мини-чек-лист</a>
+        </nav>
+      </aside>
+
+      <article class="guide-content" id="guide-content">
+        <section class="guide-section" id="quick-start" data-guide-section>
+          <span class="guide-section-index">01</span>
+          <h2>Быстрый старт</h2>
+          <p class="guide-section-lead">Если нужно просто начать:</p>
+          <ol class="guide-quick-list">
+            <li><span><strong>Для теста:</strong> 2&nbsp;г на&nbsp;100&nbsp;мл, <span class="text-nowrap">3 / 5 / 7&nbsp;минут</span>.</span></li>
+            <li><span><strong>Для подачи гостю:</strong> 3–5&nbsp;г на&nbsp;400&nbsp;мл, <span class="text-nowrap">3–5&nbsp;минут</span>.</span></li>
+            <li><span><strong>Для батча:</strong> 9–12&nbsp;г на&nbsp;1000&nbsp;мл, <span class="text-nowrap">3–5&nbsp;минут</span>, обязательно помешивать.</span></li>
+            <li><span>Температуру берите из&nbsp;списка ниже или из&nbsp;карточки конкретного чая.</span></li>
+            <li><span>После заваривания отделите настой от&nbsp;листа, чтобы вкус не&nbsp;уходил в&nbsp;лишнюю горечь.</span></li>
+          </ol>
+        </section>
+
+        <section class="guide-section" id="temperatures" data-guide-section>
+          <span class="guide-section-index">02</span>
+          <h2>Параметры заваривания</h2>
+          <p>
+            Это стартовые диапазоны, а&nbsp;не строгий закон. Вода, фильтры, посуда и&nbsp;способ заваривания влияют на&nbsp;вкус,
+            поэтому чай лучше немного откалибровать под вашу кофейню. Температуры загружаются из&nbsp;актуального каталога tutea.
+          </p>
+          <p class="guide-parameters-context">
+            <span class="guide-footnote-mark" aria-hidden="true">*</span>
+            <span class="guide-parameters-lines">
+              <span>Допуск температуры: <strong>±2&nbsp;°C</strong></span>
+              <span>Граммовка: <strong>на&nbsp;400&nbsp;мл</strong>, кроме матчи</span>
+            </span>
+          </p>
+          <div class="guide-temperature-list" id="guideTemperatures" aria-live="polite">
+            <p class="guide-data-status">Загружаем параметры чая…</p>
+          </div>
+          <p class="guide-parameters-footnote">
+            <span class="guide-footnote-mark" aria-hidden="true">*</span>
+            <span>
+              Для всех чаёв, кроме матчи, температура указана с&nbsp;рабочим допуском ±2&nbsp;°C,
+              а&nbsp;граммовка рассчитана на&nbsp;400&nbsp;мл готового напитка. Для матчи указана граммовка одного шота для напитков.
+            </span>
+          </p>
+          <aside class="guide-note">
+            <strong>Как корректировать вкус</strong>
+            <p>
+              Если вкус слабый, увеличьте граммовку, время или температуру. Если появляется грубая горечь, мыльность,
+              лишняя кислотность или неприятная терпкость, откатите параметр назад. Для кофейни обычно важнее яркий и&nbsp;понятный вкус, чем идеально тонкий баланс.
+            </p>
+          </aside>
+        </section>
+
+        <section class="guide-section" id="calibration" data-guide-section>
+          <span class="guide-section-index">03</span>
+          <h2>Калибровка вкуса</h2>
+          <p>Чай в&nbsp;кофейне лучше настроить под вашу воду, посуду и&nbsp;оборудование.</p>
+
+          <h3>Когда калибровать</h3>
+          <ul>
+            <li>Когда впервые ставите чай в&nbsp;меню.</li>
+            <li>После замены фильтров или перехода на&nbsp;другую воду.</li>
+            <li>Если вкус стал плоским, резким или слабым.</li>
+            <li>Если меняете способ заваривания.</li>
+          </ul>
+
+          <h3>Как калибровать</h3>
+          <ol>
+            <li>Возьмите базовую схему из&nbsp;карточки чая.</li>
+            <li>Попробуйте разные варианты температуры, граммовки и&nbsp;времени.</li>
+            <li>Если вкус слабый, добавьте граммовку, поднимите температуру или увеличьте время.</li>
+            <li>Если появляются резкая горечь, грубая терпкость, мыльность или неприятные ноты, откатите параметр назад.</li>
+            <li>Ищите яркий понятный вкус с&nbsp;минимумом негативных нот.</li>
+          </ol>
+
+          <aside class="guide-note">
+            <strong>Важно</strong>
+            <p>Для гостя кофейни часто важнее яркий и&nbsp;понятный вкус, чем идеально тонкий баланс. Небольшая терпкость или выраженность не всегда проблема, если чай получается вкусным и&nbsp;запоминающимся.</p>
+          </aside>
+        </section>
+
+        <section class="guide-section" id="testing" data-guide-section>
+          <span class="guide-section-index">04</span>
+          <h2>Как тестировать чай</h2>
+          <p>Почти весь чай удобно тестировать по&nbsp;схеме: <strong>2&nbsp;г на&nbsp;100&nbsp;мл, <span class="text-nowrap">3 / 5 / 7&nbsp;минут</span></strong>.</p>
+          <dl class="guide-time-scale">
+            <div><dt>3&nbsp;минуты</dt><dd>Основной вкус.</dd></div>
+            <div><dt>5&nbsp;минут</dt><dd>Плотность, баланс и&nbsp;кислотность.</dd></div>
+            <div><dt>7&nbsp;минут</dt><dd>Устойчивость к&nbsp;передержке, горечь и&nbsp;возможные негативные ноты.</dd></div>
+          </dl>
+          <p>Матчу для задач кофейни полезнее сразу пробовать в&nbsp;напитках: матча-латте, айс-матча и&nbsp;сезонных рецептах.</p>
+        </section>
+
+        <section class="guide-section" id="classic-brewing" data-guide-section>
+          <span class="guide-section-index">05</span>
+          <h2>Классическое заваривание</h2>
+          <p class="guide-section-lead"><strong>Базовая схема:</strong> 3–5&nbsp;г чая на&nbsp;400&nbsp;мл, <span class="text-nowrap">3–5&nbsp;минут</span>.</p>
+
+          <div class="guide-method is-recommended">
+            <h3>1. Заварить и&nbsp;перелить</h3>
+            <span>Рекомендуем</span>
+            <p>Нужны два стеклянных сосуда и&nbsp;сито.</p>
+            <ol>
+              <li>Взвесить чай и&nbsp;насыпать его в&nbsp;первый чайник.</li>
+              <li>Залить водой нужной температуры.</li>
+              <li>Подождать нужное время и&nbsp;при необходимости аккуратно помешать.</li>
+              <li>Перелить через сито во&nbsp;второй чайник.</li>
+              <li>Отдать гостю готовый чай без листа.</li>
+            </ol>
+            <p><strong>Почему это удобно:</strong> чай не продолжает перевариваться, вкус стабильнее, гостю проще пить и&nbsp;меньше риск получить лишнюю горечь.</p>
+          </div>
+
+          <div class="guide-method">
+            <h3>2. Заварить в&nbsp;чайнике и&nbsp;отдать гостю</h3>
+            <p>Это рабочий формат. Мы подбираем чай так, чтобы он нормально держал небольшую передержку и&nbsp;не сразу уходил в&nbsp;резкую горечь.</p>
+          </div>
+
+          <div class="guide-method">
+            <h3>3. Largo или похожее устройство</h3>
+            <p>Насыпьте чай, залейте водой, при необходимости помешайте и&nbsp;слейте готовый настой. У&nbsp;Largo есть небольшой байпасс, который нужно учитывать при настройке вкуса.</p>
+            <p><strong>Главное правило:</strong> тщательно промывайте устройство после травяных чаёв, жасмина, мяты и&nbsp;ароматных купажей.</p>
+          </div>
+
+          <div class="guide-method">
+            <h3>4. Металлическое сито или заварочная корзина</h3>
+            <p>Нормальный рабочий вариант. Помешивайте чай и&nbsp;вовремя отделяйте настой от&nbsp;листа, чтобы он не&nbsp;переваривался.</p>
+          </div>
+
+          <div class="guide-method">
+            <h3>5. Фильтр-пакеты</h3>
+            <p>Использовать можно, но листу в&nbsp;них меньше места, а&nbsp;фильтр может задерживать масла и&nbsp;ворс. Если возможно, лучше заваривать свободный лист и&nbsp;затем сливать настой.</p>
+          </div>
+
+          <aside class="guide-note">
+            <strong>О сите</strong>
+            <p>Оно должно удерживать мелкие частицы, но не&nbsp;быть слишком плотным. Бумажный фильтр может задерживать чайные масла и&nbsp;ворс, например у&nbsp;Дянь Хуна, и&nbsp;делать вкус беднее.</p>
+          </aside>
+        </section>
+
+        <section class="guide-section" id="batch" data-guide-section>
+          <span class="guide-section-index">06</span>
+          <h2>Батч и&nbsp;чай дня</h2>
+          <p class="guide-section-lead"><strong>Базовая схема:</strong> 9–12&nbsp;г чая на&nbsp;1000&nbsp;мл, <span class="text-nowrap">3–5&nbsp;минут</span>, обязательно помешивать.</p>
+          <p>Можно заварить концентрат, затем разбавить его водой до&nbsp;нужного объёма и&nbsp;баланса. Байпасс может составлять <span class="text-nowrap">до&nbsp;50%</span>, если так вкус получается чище и&nbsp;удобнее для работы.</p>
+          <ul class="guide-inline-list" aria-label="Форматы батча">
+            <li>Чай дня</li>
+            <li>Альтернатива фильтр-кофе</li>
+            <li>Холодный чай</li>
+            <li>Чайный лимонад</li>
+            <li>Сезонный напиток</li>
+          </ul>
+        </section>
+
+        <section class="guide-section" id="tea-drinks" data-guide-section>
+          <span class="guide-section-index">07</span>
+          <h2>Напитки на&nbsp;основе чая</h2>
+          <p>Чай можно использовать не&nbsp;только как чайник.</p>
+          <ul class="guide-inline-list" aria-label="Форматы напитков на основе чая">
+            <li>Чай дня</li>
+            <li>Вечерний чай</li>
+            <li>Холодный чай</li>
+            <li>Чайные лимонады</li>
+            <li>Матча-латте</li>
+            <li>Молочные чайные напитки</li>
+            <li>Сезонные авторские напитки</li>
+            <li>Коктейли и&nbsp;безалкогольные миксы</li>
+          </ul>
+          <aside class="guide-note guide-materials-note">
+            <strong>Карточки помогают продавать</strong>
+            <p>Поставьте их на&nbsp;бар, вложите в&nbsp;меню или дайте бариста как подсказку, чтобы гостю было проще выбрать чай.</p>
+            <a href="materials.html">Посмотреть готовые карточки →</a>
+          </aside>
+        </section>
+
+        <section class="guide-section" id="problems" data-guide-section>
+          <span class="guide-section-index">08</span>
+          <h2>Частые проблемы</h2>
+          <dl class="guide-problems">
+            <div><dt>Чай слабый</dt><dd>Добавьте граммовку, увеличьте время или немного поднимите температуру.</dd></div>
+            <div><dt>Чай горчит</dt><dd>Уменьшите время, снизьте температуру или быстрее отделяйте настой от&nbsp;листа.</dd></div>
+            <div><dt>Чай пахнет другим чаем</dt><dd>Проверьте, как промыли Largo, сито, чайник или корзину. Особенно после травяных, жасминовых и&nbsp;мятных чаёв.</dd></div>
+            <div><dt>Вкус нестабильный</dt><dd>Взвешивайте чай, фиксируйте температуру, ставьте таймер и&nbsp;помешивайте при батче.</dd></div>
+            <div><dt>Вкус плоский</dt><dd>Проверьте воду, фильтры, температуру и&nbsp;граммовку. Иногда проблема не&nbsp;в&nbsp;чае, а&nbsp;в&nbsp;воде или оборудовании.</dd></div>
+          </dl>
+        </section>
+
+        <section class="guide-section" id="checklist" data-guide-section>
+          <span class="guide-section-index">09</span>
+          <h2>Мини-чек-лист для бариста</h2>
+          <ul class="guide-checklist">
+            <li>Взвесить чай.</li>
+            <li>Проверить температуру воды.</li>
+            <li>Поставить таймер.</li>
+            <li>При необходимости помешать.</li>
+            <li>Вовремя слить настой.</li>
+            <li>Промыть оборудование после ароматных чаёв.</li>
+          </ul>
+        </section>
+
+        <section class="guide-cta" aria-labelledby="guide-cta-title">
+          <h2 id="guide-cta-title">Остались вопросы?</h2>
+          <p>Напишите нам — поможем разобраться с&nbsp;завариванием, вкусом и&nbsp;работой чая в&nbsp;меню.</p>
+          <a class="button" href="https://t.me/lakiory" target="_blank" rel="noreferrer">Написать нам в Telegram</a>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>Tutea</strong>
+        <p>Удобный чай для ресторанов и&nbsp;кофеен.</p>
+      </div>
+      <div class="footer-block">
+        <h2>Контакты</h2>
+        <p>Telegram: <a href="https://t.me/lakiory" target="_blank" rel="noreferrer">@lakiory</a></p>
+        <p>Telegram: <a href="https://t.me/unbush" target="_blank" rel="noreferrer">@unbush</a></p>
+        <p>Email: <a href="mailto:stationpluscorp@gmail.com">stationpluscorp@gmail.com</a></p>
+      </div>
+      <div class="footer-block">
+        <h2>Реквизиты</h2>
+        <p>ИП Галкин Григорий Алексеевич</p>
+      </div>
+      <div class="footer-legal">
+        <h2>Правовая информация</h2>
+        <p>Информация на сайте носит ознакомительный характер. Финальные условия поставки и оплаты подтверждаются в переписке.</p>
+        <p>Мы обрабатываем контактные данные исключительно для связи по заявкам. Данные не передаются третьим лицам.</p>
+        <p>Сайт использует cookies. Продолжая пользоваться сайтом, вы соглашаетесь с их использованием.</p>
+        <p><a class="footer-policy-link" href="privacy.html">Политика обработки персональных данных</a></p>
+        <p><a class="footer-policy-link" href="terms.html">Пользовательское соглашение</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=guide-brewing-7"></script>
+</body>
+</html>
