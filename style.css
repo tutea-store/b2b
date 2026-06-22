@@ -3916,3 +3916,18 @@ button:not(:disabled):hover,
     font-size: 11px;
   }
 }
+
+.qr-redirect-page {
+  display: grid;
+  min-height: 100svh;
+  justify-items: center;
+  align-content: center;
+  gap: var(--space-5);
+  padding: var(--space-7);
+  text-align: center;
+}
+
+.qr-redirect-page p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
