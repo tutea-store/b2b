@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="favicon.ico" sizes="32x32" />
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <title>Калькулятор маржинальности — Tutea</title>
+  <meta name="description" content="Калькулятор себестоимости чая, валовой прибыли и маржинальности напитка для кофеен и ресторанов." />
+  <link rel="canonical" href="https://tutea-store.github.io/b2b/calculator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Tutea" />
+  <meta property="og:title" content="Калькулятор маржинальности — Tutea" />
+  <meta property="og:description" content="Посчитайте себестоимость чая и валовую прибыль с одного напитка." />
+  <meta property="og:url" content="https://tutea-store.github.io/b2b/calculator.html" />
+  <link rel="stylesheet" href="style.css?v=calculator-8" />
+  <script src="analytics.js?v=1" defer></script>
+  <script src="calculator.js?v=8" defer></script>
+</head>
+<body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/110065875" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="tu tea">
+        <img src="assets/tu-tea-logo.png" alt="tu tea" width="60" height="21" />
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <div class="nav-primary">
+          <a class="nav-home" href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="conditions.html">Условия</a>
+        </div>
+        <details class="more-menu has-current">
+          <summary aria-label="Открыть дополнительное меню">
+            <span class="menu-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="more-menu-panel">
+            <a href="guide.html">Гайд</a>
+            <a href="calculator.html" aria-current="page">Калькулятор</a>
+            <a href="materials.html">Материалы</a>
+            <a href="individuals.html">Физлицам</a>
+            <a href="contacts.html">Контакты</a>
+          </div>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main class="calculator-page">
+    <section class="section calculator-section" aria-labelledby="calculator-title">
+      <div class="container">
+        <div class="calculator-page-heading">
+          <h1 class="section-label" id="calculator-title">Калькулятор маржинальности</h1>
+        </div>
+
+        <div class="calculator-tool">
+          <form class="calculator-form" id="marginCalculator">
+            <label class="calculator-field calculator-field-price" for="drinkPrice">
+              <span>Цена</span>
+              <span class="calculator-input-wrap">
+                <input id="drinkPrice" name="drinkPrice" type="number" min="1" step="1" value="300" inputmode="decimal" autocomplete="off" />
+                <span aria-hidden="true">₽</span>
+              </span>
+            </label>
+
+            <label class="calculator-field calculator-field-grams" for="teaGrams">
+              <span class="calculator-field-label">Граммовка <small id="dosageHint">—</small></span>
+              <span class="calculator-input-wrap">
+                <input id="teaGrams" name="teaGrams" type="number" min="0.1" step="0.1" value="4" inputmode="decimal" autocomplete="off" />
+                <span aria-hidden="true">г</span>
+              </span>
+            </label>
+
+            <label class="calculator-field calculator-field-tea" for="teaSelect">
+              <span>Чай</span>
+              <select id="teaSelect" name="tea" disabled>
+                <option>Загружаем каталог…</option>
+              </select>
+            </label>
+
+            <p class="calculator-error" id="calculatorError" role="alert" hidden>Не удалось загрузить каталог. Обновите страницу.</p>
+          </form>
+
+          <section class="calculator-result" id="calculatorResult" aria-live="polite">
+            <div class="calculator-result-data">
+              <dl class="calculator-values">
+                <div>
+                  <dt>Цена</dt>
+                  <dd id="chartPrice">—</dd>
+                </div>
+                <div>
+                  <dt>Себестоимость</dt>
+                  <dd id="teaCost">—</dd>
+                </div>
+                <div class="is-primary">
+                  <dt>Валовая прибыль</dt>
+                  <dd id="grossProfit">—</dd>
+                </div>
+              </dl>
+
+              <details class="calculator-formula">
+                <summary>Как посчитано</summary>
+                <div class="calculator-formula-copy">
+                  <p id="costFormula">—</p>
+                  <p id="profitFormula">—</p>
+                  <p>Без воды, молока, посуды, труда и&nbsp;налогов.</p>
+                </div>
+              </details>
+            </div>
+
+            <div class="margin-visual">
+              <div class="margin-column" id="marginColumn" role="img" aria-label="Распределение цены напитка между валовой прибылью и себестоимостью чая">
+                <div class="margin-cup-fill">
+                  <div class="margin-segment is-profit" id="profitSegment">
+                    <strong id="profitShare">—</strong>
+                  </div>
+                  <div class="margin-segment is-cost" id="costSegment">
+                    <strong id="costShare">—</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <strong>Tutea</strong>
+        <p>Удобный чай для ресторанов и&nbsp;кофеен.</p>
+      </div>
+      <div class="footer-block">
+        <h2>Контакты</h2>
+        <p>Telegram: <a href="https://t.me/lakiory" target="_blank" rel="noreferrer">@lakiory</a></p>
+        <p>Telegram: <a href="https://t.me/unbush" target="_blank" rel="noreferrer">@unbush</a></p>
+        <p>Email: <a href="mailto:stationpluscorp@gmail.com">stationpluscorp@gmail.com</a></p>
+      </div>
+      <div class="footer-block">
+        <h2>Реквизиты</h2>
+        <p>ИП Галкин Григорий Алексеевич</p>
+      </div>
+      <div class="footer-legal">
+        <h2>Правовая информация</h2>
+        <p>Информация на сайте носит ознакомительный характер. Финальные условия поставки и оплаты подтверждаются в переписке.</p>
+        <p>Мы обрабатываем контактные данные исключительно для связи по заявкам. Данные не передаются третьим лицам.</p>
+        <p>Сайт использует cookies. Продолжая пользоваться сайтом, вы соглашаетесь с их использованием.</p>
+        <p><a class="footer-policy-link" href="privacy.html">Политика обработки персональных данных</a></p>
+        <p><a class="footer-policy-link" href="terms.html">Пользовательское соглашение</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tutea-store.github.io/b2b/sitemap.xml
